@@ -1,0 +1,38 @@
+.poptext{
+    text-align: center;
+    margin:60px 0px;
+}
+.poptext span {
+    color: #d64b19;
+}
+.popbox{
+    border: 1px solid #e7e7e7;
+    margin: 30px;
+    border-radius: 15px;
+    padding:20px;
+    cursor: grab;
+}
+.popboxgrabbing {
+    border: 1px solid #e7e7e7;
+    margin: 30px;
+    border-radius: 15px;
+    padding:20px;
+    cursor: grabbing;
+}
+.Popularbrands{
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+    transform: none !important;
+}
+.Popularbrands img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+.Popularbrands h3{
+    margin-left: 10px;
+    margin-top: 10px;
+}

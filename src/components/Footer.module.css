@@ -1,0 +1,199 @@
+hr {
+    margin: 0px 30px;
+    border: 0.75px solid #e7e7e7;
+}
+
+.property {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.companyname span {
+    color: #d64b19;
+}
+
+.scrollup {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scrollup button {
+    background: none;
+    width: 120px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: black;
+    height: fit-content;
+}
+
+.scrollup button img {
+    width: 8px;
+}
+
+.companyname p {
+    margin-top: 30px;
+}
+
+.companyname p span {
+    margin: 0px 15px;
+    color: black;
+}
+
+.possibilities {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    padding: 30px;
+}
+
+.possibilities img {
+    margin-right: 50%;
+}
+
+.possibilities h5 {
+    text-align: center;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: 30px;
+}
+
+.info h3,
+h4 {
+    font-weight: bold;
+}
+
+.witheasybuy h4 {
+    margin: 20px 0px;
+}
+
+.customerservices h4 {
+    margin: 20px 0px;
+}
+
+.shoppingguide h4 {
+    margin: 20px 0px;
+}
+
+.info a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s linear;
+}
+
+.info a:hover {
+    color: #d64b19;
+}
+
+.info hr {
+    margin: 10px 0px;
+    border: 0.75px solid #d64b19;
+    background-color: #d64b19;
+    width: 70%;
+}
+
+.witheasybuy span {
+    color: #d64b19;
+}
+
+.customerservices span {
+    color: #d64b19;
+}
+
+.shoppingguide span {
+    color: #d64b19;
+}
+.apps{
+width: 100%;
+}
+.listicons ul li{
+    display: inline;
+    width:100%;
+    list-style: none;
+    padding-right: 20px;
+}
+.apps img{
+    opacity: 0.3;
+    width: 30px;
+    transition: all 0.2s linear;
+}
+.apps img:hover{
+    opacity: 1;
+}
+.apps ul li{
+    list-style: none;
+}
+.off{
+    margin:20px 20px
+}
+.off input{
+    margin-top: 10px;
+    background: #e7e7e7;
+    width:60%;
+    border: 0.75px solid #e7e7e7;
+    height: 40px;
+    border-radius: 5px;
+    padding-right:10px;
+    font-weight: bold;
+}
+.off input:focus{
+    outline: none;
+}
+.off button{
+    margin-right: 10px;
+    width:50px;
+    height: 40px;
+    background: #d64b19;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.off button h3{
+    font-weight: bold;
+}
+.lincenc{
+    height:25px;
+    display:flex;
+    justify-content:center;
+    background-color:rgb(159,159,159);
+    align-items:center;
+}
+.regbuttonoff{
+    opacity: 0.3;
+    cursor: default;
+    transition: all 0.2s linear;
+}
+.regbutton{
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.errormailoff{
+opacity: 0;
+transition: all 0.2s linear;
+}
+.errormail{
+    color: #d64b19;
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 0.75rem;
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+@media (max-width:850px) {
+    .possibilities {
+        display: none;
+    }
+    .info {
+        grid-template-columns: repeat(1, auto);
+    }
+    .off{
+        display: none;
+    }
+}

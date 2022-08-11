@@ -1,0 +1,39 @@
+.container {
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.pageproperty{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:baseline;
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin: 30px 40px;
+}
+.pageproperty h1{
+    margin-right: 20px
+}
+.shoppingicon{
+    position: sticky;
+    top: 60px;
+}
+.pageproperty span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    margin-right:20px;
+    background: #d64b19;;
+    border-radius: 25px;
+    padding: 0 5px;
+    font-size: 0.75rem;
+    transition: all 0.2s linear;
+}
+.shoppingiconoff{
+    display: none;
+    overflow: hidden;
+}
