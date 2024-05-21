@@ -1,15 +1,26 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import Banner from './Banner';
-import styles from "./shop.module.css";
 
 import Cart from './shared/Cart';
+
+
+// CSS(Styles Sheets)
+import styles from "./shop.module.css";
+
+
 
 
 // image
 import cashier from "../img/simon-kadula--gkndM1GvSA-unsplash.jpg";
 
+
+//Context
 import { CartContext } from "../context/CartContextProvider"
+
+
+// Components
+import Navbar from './Navbar';
+import Banner from './Banner';
 
 
 
@@ -17,6 +28,7 @@ const Shop = () => {
   const { state, dispatch } = useContext(CartContext);
   return (
     <div>
+      <Navbar position="fixed" />
       <Banner image={cashier} />
       <div className={styles.container}>
         <div className={styles.shopcontainer}>
@@ -26,8 +38,8 @@ const Shop = () => {
         {
           state.itemsCounter > 0 && <div className={styles.totaldetails}>
             <div className={styles.detailsbuy}>
-              <p  style={{fontWeight:"bold"}}><span>تعداد خرید ها : </span> {state.itemsCounter}</p>
-              <p style={{fontWeight:"bold"}}><span>هزینه کل : </span>  $ {state.total}</p>
+              <p style={{ fontWeight: "bold" }}><span>تعداد خرید ها : </span> {state.itemsCounter}</p>
+              <p style={{ fontWeight: "bold" }}><span>هزینه کل : </span>  $ {state.total}</p>
               <div className={styles.buttonshop}>
                 <button className={styles.checkout}> ادامه خرید </button>
                 {/* onClick={() => dispatch({ type: "CHECKOUT" })} */}
@@ -44,7 +56,7 @@ const Shop = () => {
         } */}
 
         {
-          !state.checkout && state.itemsCounter === 0 && <div className={styles.wantbuy} style={{margin:"20px 0px"}}>
+          !state.checkout && state.itemsCounter === 0 && <div className={styles.wantbuy} style={{ margin: "20px 0px" }}>
             <h3>چیزی می خوای بخری ؟ </h3>
             <Link to="/products">صفحه محصولات </Link>
           </div>

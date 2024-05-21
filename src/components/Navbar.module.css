@@ -1,10 +1,10 @@
 .header {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px;
     width: 100%;
+    position: fixed;
     z-index: 10000 !important;
     transition: all 0.5s linear;
 }
@@ -23,7 +23,6 @@
 }
 
 .headertwo {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -132,9 +131,9 @@ ul hr {
 }
 .division {
     position: absolute;
-    top: 100%;
-    border-radius: 1px;
-    border: none;
+    top: 90%;
+    border-radius: 5px 5px 2px 2px;
+    border-top: 5px solid #d64b19;
     background-color: #fff;
     list-style: none;
     opacity: 1;

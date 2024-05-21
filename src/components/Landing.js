@@ -5,10 +5,12 @@ import ProductList from "./ProductList"
 import Readablearticles from './Readablearticles';
 import Suggestion from './Suggestion';
 import BackgroundLanding from "../img/freestocks-_3Q3tsJ01nc-unsplash.jpg";
+import Navbar from "./Navbar";
 const Landing = () => {
   return (
     <div>
-      <Banner image = {BackgroundLanding} />
+      <Navbar position="fixed" />
+      <Banner image={BackgroundLanding} />
       <ProductList />
       <Suggestion />
       <Popularbrands />

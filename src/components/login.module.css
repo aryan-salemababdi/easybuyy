@@ -1,0 +1,29 @@
+.formSignin {
+    display: flex;
+    justify-content: center;
+}
+
+.signinCard {
+    border-top: 10px solid #d64b19;
+    background: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    margin: 20px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.signinCard h2 {
+    margin: 10px 0px;
+}
+
+.buttonOn {
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+
+.buttonOff {
+    opacity: 1;
+    transition: all 0.2s linear;
+}

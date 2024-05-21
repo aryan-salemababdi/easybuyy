@@ -26,13 +26,3 @@
     -o-transform: none !important;
     transform: none !important;
 }
-.Popularbrands img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-
-}
-.Popularbrands h3{
-    margin-left: 10px;
-    margin-top: 10px;
-}

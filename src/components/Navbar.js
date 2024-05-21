@@ -24,14 +24,15 @@ div{
     border-radius : 10px;
 }
 `
-const Navbar = () => {
-    const [scroll, setScroll] = useState(false);
+const Navbar = ({position,scroller}) => {
+    const [scroll, setScroll] = useState(scroller);
     const [open, setOpen] = useState(false);
     const btnref = useRef()
     const { state } = useContext(CartContext);
+    const positionNavbar = position;
     const valscroll = () => {
         const scrollvalue = document.documentElement.scrollTop;
-        scrollvalue > 10 ? setScroll(true) : setScroll(false);
+        scrollvalue > 10 ? setScroll(true) : setScroll(scroller);
     }
     window.addEventListener("scroll", valscroll);
     useEffect(() => {
@@ -44,7 +45,7 @@ const Navbar = () => {
     }, [])
     return (
         <div>
-            <header className={scroll ? styles.headertwo : styles.header}>
+            <header style={{position:positionNavbar}} className={scroll ? styles.headertwo : styles.header}>
                 <div className={scroll ? styles.listcountinertwo : styles.listcountiner}>
                     <button ref={btnref} style={{ background: "none", border: "none", marginTop: "10px" }} open={open} onClick={() => setOpen(prev => !prev)}>
                         <Div>

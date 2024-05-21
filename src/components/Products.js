@@ -16,6 +16,7 @@ import backgroundProduct from "../img/jules-d-ipx0MAblngM-unsplash.jpg";
 // Icons
 import shopIcon from "../img/Shopping_cart_icon.svg.png";
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 const Products = () => {
 
@@ -23,6 +24,7 @@ const Products = () => {
     const { state } = useContext(CartContext);
     return (
         <div>
+            <Navbar position="fixed" />
             <Banner image={backgroundProduct} />
             <div className={styles.container}>
                 <div className={styles.pageproperty}>
